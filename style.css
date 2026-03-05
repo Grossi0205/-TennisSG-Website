@@ -256,3 +256,303 @@ td a { text-decoration: none; color: #2c3e50; font-weight: bold; display: block;
     background-color: #2c3e50;
     color: white;
 }
+.download-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+/* Der Info-Button (Dunkelblau/Grau) */
+.info-btn {
+    background-color: #34495e !important;
+    color: white !important;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.info-btn:hover {
+    background-color: #2c3e50 !important;
+}
+
+/* Der Anmelde-Button (Grün) */
+.signup-btn {
+    background-color: #27ae60 !important;
+    color: white !important;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.signup-btn:hover {
+    background-color: #219150 !important;
+}
+html {
+    scroll-behavior: smooth;
+}
+.hospitality {
+    background-color: #fff4e6; /* Zartes Orange für Gastfreundschaft */
+    border-left: 5px solid #e67e22;
+}
+
+.logistics {
+    background-color: #e3f2fd; /* Zartes Blau für Transport */
+    border-left: 5px solid #3498db;
+}
+
+.schedule-box {
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 30px 0;
+}
+
+.intro-text {
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #555;
+    border-left: 3px solid #ccc;
+    padding-left: 15px;
+    margin-bottom: 25px;
+}
+.time-badge {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+.checklist-box {
+    background-color: #f0f7ff;
+    border-left: 5px solid #3498db;
+}
+
+.check-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.check-list li::before {
+    content: "🎾 ";
+    margin-right: 5px;
+}
+
+.agassi-quote {
+    background: #1b4d3e;
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 30px 0;
+}
+
+.agassi-quote h3 { color: #f1c40f; }
+
+.matchplan-guide .step-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.matchplan-download {
+    background-color: #fdf2e9; /* Dein helles Pfirsich/Rosa */
+    border: 2px dashed #e67e22;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 40px;
+    color: #2c3e50 !important; /* Dunkle Schrift für maximale Lesbarkeit */
+}
+
+.matchplan-download h3 {
+    color: #d35400 !important; /* Kräftiges Orange für die Überschrift */
+    margin-bottom: 15px;
+}
+
+.matchplan-download p {
+    color: #2c3e50 !important;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.hint {
+    color: #7f8c8d !important; /* Ein dezentes Grau für den kleinen Hinweis unten */
+    font-style: italic;
+    margin-top: 15px;
+}
+
+
+.agassi-check-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.check-item {
+    display: block;
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.check-item input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2); /* Macht die Box auf dem Handy größer */
+    accent-color: #f1c40f; /* Goldener Haken */
+}
+
+.agassi-hint {
+    font-size: 0.9rem;
+    margin-top: 15px;
+    opacity: 0.8;
+}
+/* --- STYLING FÜR DIE REKORDE-SEITE --- */
+
+/* Der Hintergrund der gesamten Sektion */
+.records-section {
+    padding: 20px;
+    background-color: #f4f7f6; /* Ganz helles Grau/Grün für den Hintergrund */
+    border-radius: 15px;
+}
+
+/* Die Container-Karten für jede Disziplin */
+.record-card {
+    background: #ffffff; /* Weißer Karten-Hintergrund */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Schatten, damit die Karte "schwebt" */
+    margin-bottom: 40px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+/* Der dunkelgrüne Header der Karte */
+.record-header {
+    background-color: #1b4d3e; /* Edles Tennis-Dunkelgrün */
+    color: white;
+    padding: 15px 20px;
+    border-bottom: 3px solid #27ae60;
+}
+
+.record-header h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+/* Tabellen-Styling innerhalb der Karten */
+.detailed-record-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.detailed-record-table th {
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    padding: 12px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid #eee;
+}
+
+.detailed-record-table td {
+    padding: 15px 10px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    color: #333;
+}
+
+/* Die Spalte mit den Rekord-Zahlen hervorheben */
+.detailed-record-table td.score {
+    font-weight: bold;
+    color: #27ae60;
+    background-color: #f1f8f5;
+    width: 20%; /* Etwas breiter für das Jahr */
+    white-space: nowrap; /* Verhindert Zeilenumbruch bei Jahr */
+}
+
+
+/* Zeilen beim Drüberfahren hervorheben */
+.detailed-record-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Altersklassen-Spalte fett machen */
+.detailed-record-table td:first-child {
+    font-weight: bold;
+    background-color: #fcfcfc;
+    color: #1b4d3e;
+    width: 10%;
+}
+
+/* Responsive: Horizontales Scrollen auf dem Handy */
+@media screen and (max-width: 600px) {
+    .table-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    .detailed-record-table {
+        min-width: 550px; /* Erzwingt Mindestbreite, damit nichts gequetscht wird */
+    }
+}
+
+/* Die Challenge-Box am Ende */
+.challenge-box {
+    background-color: #2c3e50;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 12px;
+    margin-top: 50px;
+    border: 2px solid #f1c40f; /* Goldener Rahmen */
+}
+
+.record-submission {
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.submission-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px solid #27ae60;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.form-group input, .form-group select {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+    .form-group { flex-direction: column; }
+}
+
+.submission-card button {
+    width: 100%;
+    cursor: pointer;
+    border: none;
+}

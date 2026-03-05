@@ -30,3 +30,26 @@ function resetScore() {
         document.getElementById('score-red').innerText = "0";
     }
 }
+function sendWhatsApp() {
+    const name = document.getElementById('name').value;
+    const ak = document.getElementById('ak').value;
+    const disziplin = document.getElementById('disziplin').value;
+    const wert = document.getElementById('wert').value;
+    const zeuge = document.getElementById('zeuge').value;
+
+    if(!name || !ak || !disziplin || !wert || !zeuge) {
+        alert("Bitte fülle alle Felder aus!");
+        return;
+    }
+
+    // Text für WhatsApp zusammenbauen
+    const message = `🏆 NEUER REKORD! %0A%0A` +
+                    `👤 Name: ${name} %0A` +
+                    `🎾 AK: ${ak} %0A` +
+                    `🎯 Disziplin: ${disziplin} %0A` +
+                    `📈 Wert: ${wert} %0A` +
+                    `🤝 Zeuge: ${zeuge}`;
+
+    // WhatsApp Link öffnen (deine Nummer)
+    window.open(`https://wa.me{message}`, '_blank');
+}
