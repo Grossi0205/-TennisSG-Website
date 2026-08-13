@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matchpoint Parent - Tennis-Talent richtig fördern</title>
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --secondary: #a3e635;
+            --text: #334155;
+            --bg: #f8fafc;
+            --white: #ffffff;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.5;
+            color: var(--text);
+            background-color: var(--bg);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: var(--primary);
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #64748b;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        .accordion {
+            background-color: #f1f5f9;
+            color: var(--primary);
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.4s;
+            border-radius: 8px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .active, .accordion:hover {
+            background-color: #e2e8f0;
+        }
+
+        .accordion:after {
+            content: '\002B';
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .active:after {
+            content: "\2212";
+        }
+
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            border-left: 3px solid var(--secondary);
+        }
+
+        h3 {
+            color: var(--primary);
+            margin-top: 20px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px solid #cbd5e1;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f1f5f9;
+            color: var(--primary);
+        }
+
+        .btn-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .btn {
+            background-color: var(--secondary);
+            color: #000;
+            padding: 12px 24px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+            display: inline-block;
+            transition: transform 0.2s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Matchpoint Parent</h1>
+    <p class="subtitle">Der digitale Tennis-Fahrplan: Erkennen. Fördern. Begleiten.</p>
+    
+    <p>Willkommen bei unserem interaktiven Leitfaden. Tennis ist komplex, aber die Förderung muss es nicht sein. Als Eltern spielen Sie die wichtigste Rolle – nicht als Trainer, sondern als emotionale Basis. Klicken Sie unten auf das Alter Ihres Kindes.</p>
+
+    <button class="accordion">Altersstufe 1: Der Einstieg (6 bis 8 Jahre)</button>
+    <div class="panel">
+        <p><em>Motto: Die Welt der Bälle entdecken – Spaß steht über Technik.</em></p>
+        <h3>🔍 Worauf Sie jetzt achten sollten (Talent-Check)</h3>
+        <ul>
+            <li><strong>Auge-Hand-Koordination:</strong> Fängt Ihr Kind Bälle mühelos aus der Luft?</li>
+            <li><strong>Antizipation:</strong> Läuft es intuitiv dorthin, wo der Ball gleich hinspringt?</li>
+            <li><strong>Ball-Fokus:</strong> Will das Kind mit jedem runden Objekt sofort spielen?</li>
+            <li><strong>Agilität:</strong> Bewegt es sich flink und wechselt schnell die Richtung?</li>
+        </ul>
+        <h3>🚀 Was Sie jetzt aktiv fördern sollten</h3>
+        <ul>
+            <li><strong>Polysportivität:</strong> Gehen Sie zusätzlich Turnen, Schwimmen oder Fußball spielen.</li>
+            <li><strong>Das richtige Material:</strong> Nutzen Sie kindgerechte rote, weiche Bälle und kleinere Schläger.</li>
+            <li><strong>Freies Spielen:</strong> Lassen Sie Ihr Kind Bälle ohne starre Regeln gegen Wände schlagen.</li>
+            <li><strong>Ergebnis-Freiheit:</strong> Loben Sie immer den Versuch, niemals das fehlerfreie Ergebnis.</li>
+        </ul>
+    </div>
+
+    <button class="accordion">Altersstufe 2: Die Orientierung (9 bis 11 Jahre)</button>
+    <div class="panel">
+        <p><em>Motto: Das goldene Lernalter – Technik saugen wie ein Schwamm.</em></p>
+        <h3>🔍 Worauf Sie jetzt achten sollten (Talent-Check)</h3>
+        <ul>
+            <li><strong>Lern-Geschwindigkeit:</strong> Setzt das Kind Trainer-Anweisungen nach wenigen Minuten um?</li>
+            <li><strong>Frustrationstoleranz:</strong> Bleibt es nach Fehlern fokussiert oder verliert es die Lust?</li>
+            <li><strong>Wettkampfdrang:</strong> Liebt es Ihr Kind, Punkte auszuspielen und Matches zu fordern?</li>
+            <li><strong>Biologischer Vorsprung:</strong> Unterscheiden Sie echtes Talent von reinem Wachstumsvorsprung.</li>
+        </ul>
+        <h3>🚀 Was Sie jetzt aktiv fördern sollten</h3>
+        <ul>
+            <li><strong>Präzise Beinarbeit:</strong> Der Fokus im Training muss jetzt stark auf dem "Split-Step" liegen.</li>
+            <li><strong>Erste Matchpraxis:</strong> Melden Sie Ihr Kind bei kleinen, regionalen Turnieren (U9/U10) an.</li>
+            <li><strong>Orange & Grüne Bälle:</strong> Nutzen Sie die altersgerechten, leicht reduzierten Ballstufen.</li>
+            <li><strong>Zweite Sportart halten:</strong> Leichtathletik (Schnelligkeit) ergänzt Tennis jetzt perfekt.</li>
+        </ul>
+    </div>
+
+    <button class="accordion">Altersstufe 3: Die Spezialisierung (12 bis 14 Jahre)</button>
+    <div class="panel">
+        <p><em>Motto: Der Weg zum Athleten – Psyche und Taktik entscheiden.</em></p>
+        <h3>🔍 Worauf Sie jetzt achten sollten (Talent-Check)</h3>
+        <ul>
+            <li><strong>Intrinsischer Antrieb:</strong> Packt Ihr Kind die Tasche selbst? Will es von sich aus mehr trainieren?</li>
+            <li><strong>Mentale Stärke:</strong> Kann es enge Spielstände (z.B. Tie-Breaks) ruhig zu Ende spielen?</li>
+            <li><strong>Regeneration:</strong> Erholt sich der Körper schnell nach harten Matches?</li>
+        </ul>
+        <h3>🚀 Was Sie jetzt aktiv fördern sollten</h3>
+        <ul>
+            <li><strong>Taktik-Training:</strong> Matchmuster verstehen lernen (z.B. "Wie öffne ich den Platz?").</li>
+            <li><strong>Spezifische Athletik:</strong> Kraft-, Schnelligkeits- und Rumpfstabilitätstraining zur Prävention.</li>
+            <li><strong>Professionelles Umfeld:</strong> Anbindung an den Landesverband oder Leistungsstützpunkte suchen.</li>
+            <li><strong>Schule & Sport:</strong> Unterstützen Sie aktiv beim Zeitmanagement im Alltag.</li>
+        </ul>
+    </div>
+
+    <h3>💡 Die goldenen Regeln für Tennis-Eltern</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>❌ Was Sie VERMEIDEN sollten</th>
+                <th>✅ Was Sie TUN sollten</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Das nackte Ergebnis ("Sieg") loben.</td>
+                <td>Den Einsatz ("Du hast toll gekämpft") loben.</td>
+            </tr>
+            <tr>
+                <td>Während des Trainings reinrufen oder coachen.</td>
+                <td>Dem Trainer vertrauen und emotionale Oase sein.</td>
+            </tr>
+            <tr>
+                <td>Rund um die Uhr nur über Tennis sprechen.</td>
+                <td>Bewusste, tennisfreie Familienzeiten einplanen.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="btn-container">
+        <a href="#" class="btn">Talent-Checkliste als PDF laden</a>
+    </div>
+</div>
+
+<script>
+    const acc = document.getElementsByClassName("accordion");
+    for (let i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            const panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+        });
+    }
+</script>
+
+</body>
+</html>
