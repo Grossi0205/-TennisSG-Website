@@ -1,21 +1,99 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-        <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    
     <title>Matchpoint Parent - Tennis-Talent richtig fördern</title>
-   
+    <!-- Bindet dein Haupt-CSS ein -->
+    <link rel="stylesheet" href="style.css"> 
+    
+    <style>
+        /* Spezifische Styles für die Akkordeons auf dieser Seite */
+        .accordion {
+            background-color: #f1f1f1;
+            color: #333;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: 0.4s;
+            margin-top: 10px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .accordion:after {
+            content: '\02795'; /* Plus-Zeichen */
+            font-size: 13px;
+            color: #777;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: "\2796"; /* Minus-Zeichen */
+        }
+
+        .accordion.active, .accordion:hover {
+            background-color: #ddd;
+        }
+
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            border-left: 3px solid #333; /* Markiert den offenen Bereich optisch */
+            margin-bottom: 10px;
+        }
+
+        .panel p, .panel h3, .panel ul {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        /* Styling für die Tabelle */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f8f9fa;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
 </head>
 <body>
 
-<div class="container">
+<!-- Platzhalter für deine dynamische Navigation (falls du ein Skript dafür nutzt) -->
+<div id="nav-placeholder"></div>
+
+<div class="container" style="margin-top: 30px;">
     <h1>Matchpoint Parent</h1>
-    <p class="subtitle">Der digitale Tennis-Fahrplan: Erkennen. Fördern. Begleiten.</p>
+    <p class="subtitle"><strong>Der digitale Tennis-Fahrplan: Erkennen. Fördern. Begleiten.</strong></p>
     
     <p>Willkommen bei unserem interaktiven Leitfaden. Tennis ist komplex, aber die Förderung muss es nicht sein. Als Eltern spielen Sie die wichtigste Rolle – nicht als Trainer, sondern als emotionale Basis. Klicken Sie unten auf das Alter Ihres Kindes.</p>
 
+    <!-- Altersstufe 1 -->
     <button class="accordion">Altersstufe 1: Der Einstieg (6 bis 8 Jahre)</button>
     <div class="panel">
         <p><em>Motto: Die Welt der Bälle entdecken – Spaß steht über Technik.</em></p>
@@ -35,6 +113,7 @@
         </ul>
     </div>
 
+    <!-- Altersstufe 2 -->
     <button class="accordion">Altersstufe 2: Die Orientierung (9 bis 11 Jahre)</button>
     <div class="panel">
         <p><em>Motto: Das goldene Lernalter – Technik saugen wie ein Schwamm.</em></p>
@@ -54,6 +133,7 @@
         </ul>
     </div>
 
+    <!-- Altersstufe 3 -->
     <button class="accordion">Altersstufe 3: Die Spezialisierung (12 bis 14 Jahre)</button>
     <div class="panel">
         <p><em>Motto: Der Weg zum Athleten – Psyche und Taktik entscheiden.</em></p>
@@ -72,7 +152,8 @@
         </ul>
     </div>
 
-    <h3>💡 Die goldenen Regeln für Tennis-Eltern</h3>
+    <!-- Goldene Regeln Tabelle -->
+    <h3 style="margin-top: 40px;">💡 Die goldenen Regeln für Tennis-Eltern</h3>
     <table>
         <thead>
             <tr>
@@ -98,6 +179,7 @@
 
 </div>
 
+<!-- JavaScript für das sanfte Auf- und Zuklappen -->
 <script>
     const acc = document.getElementsByClassName("accordion");
     for (let i = 0; i < acc.length; i++) {
@@ -111,6 +193,16 @@
             } 
         });
     }
+</script>
+
+<!-- Script zum automatischen Laden deiner nav.html (falls auf deinen anderen Seiten aktiv) -->
+<script>
+    fetch('nav.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('nav-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error('Fehler beim Laden der Navigation:', error));
 </script>
 
 </body>
