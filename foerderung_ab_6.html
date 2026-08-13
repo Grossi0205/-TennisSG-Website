@@ -7,85 +7,14 @@
     <!-- Bindet dein Haupt-CSS ein -->
     <link rel="stylesheet" href="style.css"> 
     
-    <style>
-        /* Spezifische Styles für die Akkordeons auf dieser Seite */
-        .accordion {
-            background-color: #f1f1f1;
-            color: #333;
-            cursor: pointer;
-            padding: 18px;
-            width: 100%;
-            border: none;
-            text-align: left;
-            outline: none;
-            font-size: 1.1rem;
-            font-weight: bold;
-            transition: 0.4s;
-            margin-top: 10px;
-            border-radius: 5px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .accordion:after {
-            content: '\02795'; /* Plus-Zeichen */
-            font-size: 13px;
-            color: #777;
-            float: right;
-            margin-left: 5px;
-        }
-
-        .active:after {
-            content: "\2796"; /* Minus-Zeichen */
-        }
-
-        .accordion.active, .accordion:hover {
-            background-color: #ddd;
-        }
-
-        .panel {
-            padding: 0 18px;
-            background-color: white;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease-out;
-            border-left: 3px solid #333; /* Markiert den offenen Bereich optisch */
-            margin-bottom: 10px;
-        }
-
-        .panel p, .panel h3, .panel ul {
-            margin-top: 15px;
-            margin-bottom: 15px;
-        }
-
-        /* Styling für die Tabelle */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-            margin-bottom: 40px;
-        }
-
-        th, td {
-            border: 1px solid #ddd;
-            padding: 12px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #f8f9fa;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-    </style>
+    
 </head>
 <body>
-
-<!-- Platzhalter für deine dynamische Navigation (falls du ein Skript dafür nutzt) -->
-<div id="nav-placeholder"></div>
+<header>
+        <h1>TennisSG</h1>
+        <!-- Der Platzhalter für deine zentrale Navigation -->
+        <div id="nav-placeholder"></div>
+    </header>
 
 <div class="container" style="margin-top: 30px;">
     <h1>Matchpoint Parent</h1>
